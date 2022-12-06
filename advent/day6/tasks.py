@@ -4,7 +4,7 @@ from pathlib import Path
 def get_input_as_line() -> None:
     return Path("advent/day6/input.txt").read_text() 
 
-@task_output
+
 def find_marker(marker_length: int):
     line = get_input_as_line()
 
@@ -15,10 +15,12 @@ def find_marker(marker_length: int):
     raise ValueError("No result found")
 
 
-
+@task_output(challenge=1)
 def task1():
     return find_marker(4)
 
+
+@task_output(challenge=2)
 def task2():
     return find_marker(14)
    

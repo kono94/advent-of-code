@@ -2,7 +2,6 @@ from advent.common import task_output
 from pathlib import Path
 from collections import deque
 
-@task_output
 def common(task_specific_function):
     splt = Path("advent/day5/input.txt").read_text().split("\n\n")
     container_input_lines = splt[0].split("\n 1")[0].split("\n")
@@ -31,7 +30,7 @@ def common(task_specific_function):
     return top_containers_output
 
 
-
+@task_output(challenge=1)
 def task1():
     def task1_function(containers, amount, from_stack_idx, to_stack_idx):
         for _ in range(0, amount):
@@ -40,6 +39,7 @@ def task1():
     return common(task1_function)
 
 
+@task_output(challenge=2)
 def task2():
     def task2_function(containers, amount, from_stack_idx, to_stack_idx):
         chunk = []

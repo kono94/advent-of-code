@@ -1,6 +1,6 @@
 from advent.common import read_file_line_by_line, task_output
 
-@task_output
+
 def common(task_specific_function):
     input = read_file_line_by_line("advent/day2/input.txt")
     choice_map, choice = task_specific_function()
@@ -15,6 +15,7 @@ def common(task_specific_function):
     return total
 
 
+@task_output(challenge=1)
 def task1():
     def task1_specific():
         choice_map = {"A": 1, "B": 2, "C": 3, "X": 1, "Y": 2, "Z": 3}
@@ -33,6 +34,7 @@ def task1():
     return common(task1_specific)
     
     
+@task_output(challenge=2)
 def task2():
     def task2_specific():    
         choice_map = {"A": 1, "B": 2, "C": 3, "X": 0, "Y": 3, "Z": 6}

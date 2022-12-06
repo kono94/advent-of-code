@@ -2,7 +2,7 @@ from typing import Callable
 from advent.common import read_file_line_by_line, task_output
 
 
-@task_output
+
 def common(task_specific_function: Callable) -> int:
     input = read_file_line_by_line("advent/day4/input.txt")
     total = 0
@@ -18,14 +18,14 @@ def common(task_specific_function: Callable) -> int:
         
     return total
 
-
+@task_output(1)
 def task1():
     def task1_specific(first_range, second_range):
          return 1 if first_range.issubset(second_range) or second_range.issubset(first_range) else 0
      
     return common(task1_specific)
    
-    
+@task_output(2)
 def task2():
     def task2_specific(first_range, second_range):
         return 0 if len(first_range.intersection(second_range)) == 0 else 1 

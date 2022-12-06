@@ -1,6 +1,5 @@
 from advent.common import read_file_line_by_line, task_output
 
-@task_output
 def common(task_specific_function):
     input = read_file_line_by_line("advent/day1/input.txt")
     elves = []
@@ -17,19 +16,21 @@ def common(task_specific_function):
     return task_specific_function(elves)    
 
 
+@task_output(challenge=1)
 def task1():
     def task1_specific(elves):
         return max(elves)
     
-    common(task1_specific)
+    return common(task1_specific)
     
     
+@task_output(challenge=2)
 def task2():
     def task2_specific(elves):    
         elves.sort(reverse=True)
         return sum(elves[:3])  
         
-    common(task2_specific)
+    return common(task2_specific)
 
 
 if __name__ == "__main__":

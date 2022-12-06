@@ -1,11 +1,13 @@
 from typing import Callable
 from advent.common import read_file_line_by_line, task_output
 
-@task_output
+
 def common(task_specific_function: Callable) -> int:
     input = read_file_line_by_line("advent/day3/input.txt")
     return task_specific_function(input)
 
+
+@task_output(challenge=1)
 def task1():
     def task1_specific(input):
         total = 0
@@ -26,6 +28,7 @@ def task1():
     return common(task1_specific)
 
 
+@task_output(challenge=2)
 def task2():
     def task2_specific(input):
         total = 0
