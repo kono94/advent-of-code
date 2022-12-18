@@ -12,6 +12,5 @@ def task_output(challenge=0):
         def wrapper(*args):
             print(f"Results for {Path(inspect.stack()[1].filename).parent.name} - Challenge {challenge}:")
             print(func(*args))
-            return func(*args)
         return wrapper
     return actual_decorator
