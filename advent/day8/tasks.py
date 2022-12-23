@@ -4,7 +4,7 @@ import numpy as np
 
 
 def common(task_specific):
-    input = read_file_line_by_line("advent/day8/input.txt")
+    input = read_file_line_by_line("advent/day8/input_test.txt")
     grid = []
     for row, line in enumerate(input):
         grid.append([])
