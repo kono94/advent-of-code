@@ -3,7 +3,7 @@ from pathlib import Path
 from collections import deque
 
 def common(task_specific_function):
-    splt = Path("advent/day5/input.txt").read_text().split("\n\n")
+    splt = Path("advent/day05/input.txt").read_text().split("\n\n")
     container_input_lines = splt[0].split("\n 1")[0].split("\n")
     moveset_input_lines = splt[1].split("\n")
     containers = [deque() for i in range(0,9)]

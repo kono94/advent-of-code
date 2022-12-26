@@ -46,7 +46,7 @@ def common() -> np.ndarray:
     '''
         Returns numpy array with all directory sizes (recursive sizes)
     '''
-    input = read_file_line_by_line("advent/day7/input.txt")
+    input = read_file_line_by_line("advent/day07/input.txt")
     file_system = FileTree() # initiated  with / as root direction
     
     build_file_system_tree(file_system, input)

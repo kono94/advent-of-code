@@ -3,7 +3,7 @@ from advent.common import read_file_line_by_line, task_output
 
 
 def common(task_specific_function: Callable) -> int:
-    input = read_file_line_by_line("advent/day3/input.txt")
+    input = read_file_line_by_line("advent/day03/input.txt")
     return task_specific_function(input)
 
 
