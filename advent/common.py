@@ -2,6 +2,14 @@ from pathlib import Path
 import functools
 
 def read_file_line_by_line(filepath: str) -> list[str]:
+    """This is an awesome function
+
+    Args:
+        filepath (str): path from project directory
+
+    Returns:
+        list[str]: list of lines
+    """    
     return Path(filepath).read_text().strip().split("\n")
 import inspect
 
