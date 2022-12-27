@@ -1,7 +1,7 @@
 from advent.common import task_output, read_file_line_by_line
 
 
-def common():
+def common(task_specific):
     input = read_file_line_by_line("advent/dayX/input.txt")
     return 0
 
