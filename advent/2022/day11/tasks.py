@@ -24,7 +24,7 @@ class Monkey:
         return old % self.divisible_by == 0
 
 def build_monkeys():
-    input = read_file_line_by_line("advent/day11/input.txt")
+    input = read_file_line_by_line("advent/2022/day11/input.txt")
 
     monkeys = []
     current_monkey = None

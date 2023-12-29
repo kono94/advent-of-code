@@ -2,7 +2,7 @@ from advent.common import task_output
 from pathlib import Path
 
 def get_input_as_line() -> None:
-    return Path("advent/day06/input.txt").read_text() 
+    return Path("advent/2022/day06/input.txt").read_text() 
 
 
 def find_marker(marker_length: int):

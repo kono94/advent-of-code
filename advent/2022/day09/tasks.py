@@ -33,7 +33,7 @@ def tail_tracing(H: np.ndarray, T: np.ndarray) -> None:
         return
 
 def common(task_specific: callable):
-    input = read_file_line_by_line("advent/day09/input.txt")
+    input = read_file_line_by_line("advent/2022/day09/input.txt")
 
     # X, Y positions.
     # starting position is BOTTOM LEFT!

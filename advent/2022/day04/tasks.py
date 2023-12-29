@@ -4,7 +4,7 @@ from advent.common import read_file_line_by_line, task_output
 
 
 def common(task_specific_function: Callable) -> int:
-    input = read_file_line_by_line("advent/day04/input.txt")
+    input = read_file_line_by_line("advent/2022/day04/input.txt")
     total = 0
     for line in input:
         pair = line.split(",")

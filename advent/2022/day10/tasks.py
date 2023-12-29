@@ -1,7 +1,7 @@
 from advent.common import task_output, read_file_line_by_line
 
 def common() -> None:
-    input = read_file_line_by_line("advent/day10/input.txt")
+    input = read_file_line_by_line("advent/2022/day10/input.txt")
 
     for line in input:
         parts = line.split(" ")

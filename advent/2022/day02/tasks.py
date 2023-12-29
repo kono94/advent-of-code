@@ -2,7 +2,7 @@ from advent.common import read_file_line_by_line, task_output
 
 
 def common(task_specific_function):
-    input = read_file_line_by_line("advent/day02/input.txt")
+    input = read_file_line_by_line("advent/2022/day02/input.txt")
     choice_map, choice = task_specific_function()
         
     total = 0

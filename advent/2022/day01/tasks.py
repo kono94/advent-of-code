@@ -1,7 +1,7 @@
 from advent.common import read_file_line_by_line, task_output
 
 def common(task_specific_function):
-    input = read_file_line_by_line("advent/day01/input.txt")
+    input = read_file_line_by_line("advent/2022/day01/input.txt")
     elves = []
     elves.append(0)
     i = 0

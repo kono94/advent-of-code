@@ -41,7 +41,7 @@ def explore_breadth_first(grid, current_pos, E):
     return float("infinity")
 
 def common():
-    input = read_file_line_by_line("advent/day12/input.txt")
+    input = read_file_line_by_line("advent/2022/day12/input.txt")
     grid = []
     S = None
     E = None
