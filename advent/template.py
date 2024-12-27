@@ -2,7 +2,7 @@ from advent.common import task_output, read_file_line_by_line
 
 
 def common(task_specific):
-    input = read_file_line_by_line("advent/dayX/input.txt")
+    input = read_file_line_by_line("advent/202X/dayX/input.txt")
     return 0
 
 @task_output(challenge=1)
