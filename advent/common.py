@@ -1,4 +1,5 @@
 from pathlib import Path
+from time import time
 import functools
 
 def read_file_line_by_line(filepath: str) -> list[str]:
@@ -19,6 +20,8 @@ def task_output(challenge=0):
         @functools.wraps(func)
         def wrapper(*args):
             print(f"Results for {Path(inspect.stack()[1].filename).parent.name} - Challenge {challenge}:")
+            start_time = time() 
             print(func(*args))
+            print(f"Execution Time: {(time() - start_time) * 1000  :.2f} ms")
         return wrapper
     return actual_decorator
